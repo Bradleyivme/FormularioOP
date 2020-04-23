@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FormularioOP</title>
+    <style>
+        h1{
+            color: brown;
+            font-family: sans-serif, Arial, Helvetica;
+        }
+        p{
+            color: blanchedalmond;
+            font-family: sans-serif, Arial, Helvetica;
+        }
+        label{
+            color: blanchedalmond;
+            font-family: sans-serif, Arial, Helvetica;
+        }
+        button{
+            color: blanchedalmond;
+            background-color: brown;
+        }
+        .AA{
+            background-color: brown;
+            color: blanchedalmond;
+        }
+        .BB{
+            background-color: brown;
+            color: blanchedalmond;
+        }
+        .RR{
+            background-color: brown;
+            color: blanchedalmond;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: black;">
 <br><br><br><br><br>
-<center>
     <h1>Formulario de Operaciones</h1>
-</center>
-
+<br>
     <!-- Se implementa las instrucciones de las siguientes -->
     <p>A continuación se te presentan 4 diferentes operaciones:</p>
     <p> - Suma</p>
@@ -26,9 +54,9 @@
 
     <!-- Campo de captura de los valos a operar -->
     <label for="a">Primer número</label>
-    <input type="number" name="a" id="a"><br><br>
+    <input class = "AA" type="number" name="a" id="a"><br><br>
     <label for="b">Segundo número</label>
-    <input type="number" name="b" id="b"><br><br>
+    <input class = "BB" type="number" name="b" id="b"><br><br>
 
 <p>A través de estos cuatro botones podrá operar las variables escogidas:</p><br>
 
@@ -42,7 +70,7 @@
 
     <!-- input que mostrará el resultado de los valores a operar -->
     <label for="r">Resultado</label>
-    <input type="number" name="r" id="r"><br><br>
+    <input class = "RR" type="number" name="r" id="r"><br><br>
 
     <script>
         // Los valores de los input son capturados y convertidoos en variables
@@ -139,5 +167,9 @@
             document.getElementById("r").value = r
         }
     </script>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 </body>
 </html>
