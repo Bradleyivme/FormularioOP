@@ -115,7 +115,29 @@
             // Se muestra el resultado de la suma en el navegador por medio de html
             document.getElementById("r").value = r
         }
+        function Dividir(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var r;
 
+            // Verificación de las variables si son valores vacíos y convertirlos a enteros
+            if(a == ""){
+                a = 0;
+            }else{
+                a = parseInt(a);
+            }
+            if(b == ""){
+                b = 0;
+            }else{
+                b = parseInt(b);
+            }
+
+            // Ejecución de la suma de diferentes variables
+            r = a / b;
+
+            // Se muestra el resultado de la suma en el navegador por medio de html
+            document.getElementById("r").value = r
+        }
     </script>
 </body>
 </html>
