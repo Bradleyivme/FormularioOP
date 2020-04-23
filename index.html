@@ -38,7 +38,20 @@
             var a = document.getElementById("a").value;
             var b = document.getElementById("b").value;
             var r;
+
+            if(a == ""){
+                a = 0;
+            }else{
+                a = parseInt(a);
+            }
+            if(b == ""){
+                b = 0;
+            }else{
+                b = parseInt(a);
+            }
+
             r = a + b;
+
             document.getElementById("r").value = r
         }
 
